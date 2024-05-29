@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Mon formulaire 1</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Formulaire d'enregistrement</h1>
+        <form method="post" action="traitement.php">
+
+            <fieldset class="mt-4">
+                <legend>Vos coordonnées</legend>
+
+                <div class="form-group">
+                    <label for="nom">Quel est votre nom ?</label>
+                    <input type="text" class="form-control" name="nom" id="nom" tabindex="10" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="prenom">Quel est votre prénom ?</label>
+                    <input type="text" class="form-control" name="prenom" id="prenom" tabindex="20" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Quel est votre e-mail ?</label>
+                    <input type="text" class="form-control" name="email" id="email" tabindex="30" />
+                </div>
+            </fieldset>
+            
+            <fieldset class="mt-4">
+                <legend>Votre souhait</legend>
+
+                <div class="form-group">
+                    <p>
+                        Faites un souhait que vous voudriez voir exaucé :
+                    </p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="souhait" value="riche" id="riche" tabindex="40" />
+                        <label class="form-check-label" for="riche">Etre riche</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="souhait" value="celebre" id="celebre" tabindex="50" />
+                        <label class="form-check-label" for="celebre">Etre célèbre</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="souhait" value="intelligent" id="intelligent" tabindex="60" />
+                        <label class="form-check-label" for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="souhait" value="autre" id="autre" tabindex="70" />
+                        <label class="form-check-label" for="autre">Autre...</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="precisions">Si "Autre", veuillez préciser :</label>
+                    <textarea class="form-control" name="precisions" id="precisions" cols="40" rows="4" tabindex="80"></textarea>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Bootstrap JavaScript et jQuery (optionnel) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
